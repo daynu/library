@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Library</title>
+</head>
+<body>
+    <div id = "top">
+        LIBRARY
+    </div>
+    <div id="main">
+        <h2 id = "your-books">Your Books</h2> 
+        <button id = "add">Add a book</button>
+        <div id="bookList">
+
+        </div>
+    </div>
+   
+
+    <section class="modal hidden">
+        <div class="flex">
+            Add a new Book
+            <form>
+            <label>Title</label>
+            <br>
+            <input type="text" name="" id="title" required>
+            <br>
+            <label>Author</label>
+            <br>
+            <input type="text" name="" id="author" required>
+            <br>
+            <label>Pages</label>
+            <br>
+            <input type = "number" id = "pages" required>
+            <br>
+            <label>Read</label>
+            <input type="checkbox" id="read">
+            <br>
+            <button id="addBook" type="submit">Add</button>
+            <button id="cancel">Cancel</button>
+        </form>
+        </div>
+    </section>
+    <section class="removeAlert hidden">
+        <p>Are you sure you want to remove this book?</p>
+        <div style="display: flex; justify-content: space-around;">
+        <button class="alertOption" id="yes">YES</button>
+        <button class="alertOption" id="no">NO</button>
+        </div>
+    </section>
+    <div class="overlay hidden"></div>
+<script src="./index.js"></script>    
+</body>
+</html>
